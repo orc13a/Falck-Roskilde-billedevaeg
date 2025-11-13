@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html,
+body,
+input,
+button {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  overscroll-behavior: none;
+  letter-spacing: 1px;
+}
+
+nav {
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 22px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FF1F29;
+}
+
+.contentContainer {
+    display: flex;
+    align-items: end;
+    gap: 25px;
+    justify-content: center;
+}
+
+.pictureContainer {
+    width: 13cm;
+    height: 18cm;
+    min-width: 13cm;
+    min-height: 18cm;
+    border-color: black;
+    /* border-style: solid;
+    border-width: 1px; */
+    box-shadow: 0px 0px 24px rgb(0, 0, 0, 0.15);
+}
+
+.pictureFrame {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.picture {
+    /* height: 100%; */
+    height: 552.31px;
+}
+
+.nameContainer {
+    background-color: #66172A;
+    color: #ffffff;
+    height: 128px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 0px 32px;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 38.5px;
+    line-height: 58px;
+}
+
+.number {
+    font-weight: 300;
+    font-size: 31.1px;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 3px;
+    margin-bottom: 25px;
+}
+
+.inputContainer span {
+    font-size: 14px;
+    margin-left: 6px;
+}
+
+.inputContainer input {
+    width: 280px;
+    padding: 10px;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: #66172A;
+    border-style: solid;
+    font-size: 16px;
+}
+
+.inputContainer input:focus {
+    border-color: #66172A;
+    outline-width: 0px;
+}
+
+.inputContainer i {
+    font-size: 12px;
+    margin-left: 6px;
+    color: rgb(138, 138, 138);
+}
+
+button {
+    background-color: #FF1F29;
+    border: none;
+    color: #ffffff;
+    padding: 12px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #66172A;
+    transition: 0.3s;
+}
