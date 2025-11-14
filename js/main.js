@@ -59,6 +59,10 @@ document.getElementById('file').addEventListener('change', function (event) {
     const reader = new FileReader();
     reader.onload = function (e) {
         const img = document.getElementById('imageDisplay');
+        const noPicture = document.getElementById('noPictureImage');
+
+        noPicture.style.display = 'none';
+
         img.src = e.target.result;
         img.style.display = 'block'; // viser billedet når det er uploadet
     };
