@@ -40,34 +40,52 @@ numberInput.onkeydown = function (event) {
 // Image
 // 
 
-const imageInput = document.getElementById('imageInput');
-const imageDisplay = document.getElementById('imageDisplay');
+// const imageInput = document.getElementById('imageInput');
+// const imageDisplay = document.getElementById('imageDisplay');
 
-imageInput.addEventListener('change', (event) => {
-    const file = event.target.files[0];
-    if (file) {
-        const reader = new FileReader();
-        reader.onload = function (e) {
-            imageDisplay.src = e.target.result;
-        };
-        reader.readAsDataURL(file);
-    }
-});
+// imageInput.addEventListener('change', (event) => {
+//     const file = event.target.files[0];
+//     if (file) {
+//         const reader = new FileReader();
+//         reader.onload = function (e) {
+//             imageDisplay.src = e.target.result;
+//         };
+//         reader.readAsDataURL(file);
+//     }
+// });
 
+
+// document.getElementById('file').addEventListener('change', function (event) {
+//     const file = event.target.files[0];
+//     if (!file) return;
+
+//     // const noPicture = document.getElementById('noPictureImage');
+//     // noPicture.style.display = 'none';
+
+//     const reader = new FileReader();
+//     reader.onload = function (e) {
+//         const img = document.getElementById('imageDisplay');
+
+//         img.src = e.target.result;
+//         img.style.display = 'block'; // viser billedet når det er uploadet
+//     };
+//     reader.readAsDataURL(file);
+// });
 
 document.getElementById('file').addEventListener('change', function (event) {
+    const noPicture = document.getElementById('noPictureImage');
+    noPicture.style.display = 'none';
+
     const file = event.target.files[0];
     if (!file) return;
 
     const reader = new FileReader();
     reader.onload = function (e) {
         const img = document.getElementById('imageDisplay');
-        const noPicture = document.getElementById('noPictureImage');
-
-        noPicture.style.display = 'none';
 
         img.src = e.target.result;
-        img.style.display = 'block'; // viser billedet når det er uploadet
+        img.style.display = 'block'; // vis billedet
     };
+
     reader.readAsDataURL(file);
 });
