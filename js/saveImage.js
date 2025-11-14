@@ -28,7 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 return dataUrl;
             })
             .then(url => {
-                const fileFullName = name.join('_')
+                const fileFullName = name.split(' ').join('_')
 
                 const link = document.createElement('a');
                 link.download = `${fileFullName}_${number}--Falck-Roskilde-billede.png`;
