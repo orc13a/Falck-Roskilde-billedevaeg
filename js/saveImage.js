@@ -59,7 +59,7 @@ window.addEventListener('DOMContentLoaded', () => {
             const canvas = await html2canvas(frame, { scale: scale });
 
             // ---- TRIM 2 PIXELS FRA HØJRE + BUND ----
-            const trim = 1;   // prøv 1–3 hvis nødvendigt
+            const trim = 2;   // prøv 1–3 hvis nødvendigt
 
             const cropped = document.createElement('canvas');
             cropped.width = canvas.width - trim;
