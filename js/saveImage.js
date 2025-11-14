@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
             .then(url => {
                 const link = document.createElement('a');
                 link.download = 'falck-roskilde-billede.png';
-                link.href = dataUrl;
+                link.href = url;
                 link.click();
             });
 
