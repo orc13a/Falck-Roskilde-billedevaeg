@@ -1,4 +1,4 @@
-console.log('v1.0.2');
+console.log('v1.0.3');
 
 
 const nameInput = document.getElementById('nameInput');
