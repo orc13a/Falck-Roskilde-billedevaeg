@@ -46,6 +46,7 @@ nav {
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
     border: none;
     border-width: 0px;
 }
@@ -59,7 +60,6 @@ nav {
 
 .nameContainer {
     background-color: #66172A;
-    width: 100%;
     color: #ffffff;
     height: 128px;
     display: flex;
