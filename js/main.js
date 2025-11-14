@@ -1,3 +1,6 @@
+console.log('v1.0.0');
+
+
 const nameInput = document.getElementById('nameInput');
 const nameDisplay = document.getElementById('name');
 const numberInput = document.getElementById('numberInput');
