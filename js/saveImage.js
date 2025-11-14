@@ -28,11 +28,11 @@ window.addEventListener('DOMContentLoaded', () => {
             .then(url => {
                 const name = document.getElementById('nameInput').value;
                 const number = document.getElementById('numberInput').value;
-                
+
                 const fileFullName = name.split(' ').join('_')
 
                 const link = document.createElement('a');
-                link.download = `${fileFullName}_${number}--Falck-Roskilde-billede.png`;
+                link.download = `${fileFullName}-${number}--Falck-Roskilde-billede.png`;
                 link.href = url;
                 link.click();
             });

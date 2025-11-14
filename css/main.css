@@ -34,21 +34,27 @@ nav {
     height: 18cm;
     min-width: 13cm;
     min-height: 18cm;
-    border-color: black;
+    /* border-color: black; */
     /* border-style: solid;
     border-width: 1px; */
     box-shadow: 0px 0px 24px rgb(0, 0, 0, 0.15);
+    border: none;
+    border-width: 0px;
 }
 
 .pictureFrame {
     display: flex;
     flex-direction: column;
     height: 100%;
+    border: none;
+    border-width: 0px;
 }
 
 .picture {
     /* height: 100%; */
     height: 552.31px;
+    border: none;
+    border-width: 0px;
 }
 
 .nameContainer {
