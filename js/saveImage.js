@@ -1,8 +1,8 @@
 window.addEventListener('DOMContentLoaded', () => {
     const saveButton = document.getElementById('imageSave');   // "Gem billede"-knappen
     const frame = document.getElementById('pictureFrame');      // div#pictureFrame
-    const name = document.getElementById('name').innerHTML;
-    const number = document.getElementById('number').innerHTML;
+    const name = document.getElementById('name').innerText;
+    const number = document.getElementById('number').innerText;
 
     if (!saveButton || !frame) return;
 

@@ -1,4 +1,4 @@
-console.log('v1.0.1');
+console.log('v1.0.2');
 
 
 const nameInput = document.getElementById('nameInput');
@@ -11,7 +11,7 @@ nameInput.addEventListener('input', (value) => {
 
     if (input.length < 1) {
         nameDisplay.style.color = '#66172A'
-        nameDisplay.innerHTML = '.';
+        nameDisplay.innerHTML = '-';
     } else {
         nameDisplay.style.color = '#ffffff'
         nameDisplay.innerHTML = input;
@@ -23,7 +23,7 @@ numberInput.addEventListener('input', (value) => {
 
     if (input.length < 1) {
         numberDisplay.style.color = '#66172A'
-        numberDisplay.innerHTML = '.';
+        numberDisplay.innerHTML = '-';
     } else {
         numberDisplay.style.color = '#ffffff'
         numberDisplay.innerHTML = input;
