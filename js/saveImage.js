@@ -1,8 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
     const saveButton = document.getElementById('imageSave');   // "Gem billede"-knappen
     const frame = document.getElementById('pictureFrame');      // div#pictureFrame
-    const name = document.getElementById('nameInput').value;
-    const number = document.getElementById('numberInput').value;
 
     if (!saveButton || !frame) return;
 
@@ -28,6 +26,9 @@ window.addEventListener('DOMContentLoaded', () => {
                 return dataUrl;
             })
             .then(url => {
+                const name = document.getElementById('nameInput').value;
+                const number = document.getElementById('numberInput').value;
+                
                 const fileFullName = name.split(' ').join('_')
 
                 const link = document.createElement('a');
