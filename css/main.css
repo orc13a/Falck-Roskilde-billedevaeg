@@ -59,6 +59,7 @@ nav {
 
 .nameContainer {
     background-color: #66172A;
+    width: 100%;
     color: #ffffff;
     height: 128px;
     display: flex;
