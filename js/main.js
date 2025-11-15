@@ -16,6 +16,8 @@ nameInput.addEventListener('input', (value) => {
         nameDisplay.style.color = '#ffffff'
         nameDisplay.innerHTML = input;
     }
+
+    autoResizeName();
 });
 
 numberInput.addEventListener('input', (value) => {
@@ -35,6 +37,27 @@ numberInput.onkeydown = function (event) {
         event.preventDefault();
     }
 };
+
+function autoResizeName() {
+    const nameEl = document.getElementById('name');
+    const container = document.querySelector('.nameContainer');
+
+    if (!nameEl || !container) return;
+
+    const maxFont = 38.5;   // standard størrelse
+    const minFont = 16;     // laveste størrelse
+
+    // start altid ved max, så den vokser igen hvis navnet bliver kortere
+    let fontSize = maxFont;
+    nameEl.style.fontSize = fontSize + 'px';
+    nameEl.style.whiteSpace = 'nowrap'; // vigtig: undgå linjeskift, så vi kan måle bredden korrekt
+
+    // Loop indtil teksten passer indenfor containerens bredde
+    while ((nameEl.scrollWidth + 56) > container.clientWidth && fontSize > minFont) {
+        fontSize -= 1;
+        nameEl.style.fontSize = fontSize + 'px';
+    }
+}
 
 // 
 // Image
